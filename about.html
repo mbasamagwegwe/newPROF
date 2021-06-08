@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#divi").fadeIn();
+                $("#divi2").fadeIn(1000);
+                $("#divi3").fadeIn(2000);
+                $("#divi4").fadeIn(3000);
+                $("#divi5").fadeIn(4000);
+            });
+        });
+    </script>
+    <style>
+    body {
+            margin: 0;
+            padding: 0;
+            background: #024754;
+            color: #f3bda1;
+            text-align: center;
+            font-family: concert one;
+        }
+        
+        .navbar {
+            padding: 30px 15px 30px 15px;
+            background-color: #024754;
+            color: #fff000;
+        }
+        
+        .navbar a {
+            display: inline-block;
+            color: #f3bda1;
+            text-decoration: none;
+            margin-right: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .navbar a:hover {
+            border-bottom: 4px solid white;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        
+        img {
+            border-radius: 50%;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            display: none;
+            background-color: #000;
+        }
+        
+        button {
+            border: 3px solid#f3bda1;
+            color: #000;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class=" navbar ">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="project.html">PROJECT</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+
+
+
+    <div class="content">
+        <h2>Get to know me</h2>
+        <img src="mb.jpg" width="400px" height="400px">
+        <p>I want to be exposed to the demand of the working industry and
+            <br>I am very reliable,quick to learn and eager to work under pressure & Every task <br>I take i complete it in time with satisfaction.
+            <br>I am an independent individual but I can also work in team.</p>
+    </div>
+
+
+    <button>SKILLS</button>
+    <div id="divi1" class="box">HTML</div>
+    <br>
+    <div id="divi2" class="box">CSS</div>
+    <br>
+    <div id="divi3" class="box">JAVASCRIPT</div>
+    <br>
+    <div id="divi4" class="box">JQUERY</div>
+    <br>
+    <div id="divi5" class="box">BOOTSTRAP
+    </div>
+
+
+
+
+</body>
+
+</html>

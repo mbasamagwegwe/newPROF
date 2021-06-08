@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #024754;
+            color: #f3bda1;
+            text-align: center;
+            font-family: concert one;
+        }
+        
+        .navbar {
+            padding: 30px 15px 30px 15px;
+            background-color: #024754;
+            color: #fff000;
+        }
+        
+        .navbar a {
+            display: inline-block;
+            color: #f3bda1;
+            text-decoration: none;
+            margin-right: 50px;
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .navbar a:hover {
+            border-bottom: 4px solid white;
+        }
+        
+        p {
+            color: white;
+            font-size: 60px;
+        }
+        
+        .ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            background: transparent;
+            border: 3px solid #3c3c3c;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 150px;
+            font-family: concer one;
+            font-size: 20px;
+            margin-top: 60px;
+            color: #f3bda1;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px palevioletred;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        }
+        
+        .ring:before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top: 3px solid#f3bda1;
+            border-right: 3px solid#f3bda1;
+            border-radius: 50%;
+            animation: animateC 2s linear infinite;
+        }
+        
+        span {
+            display: block;
+            position: absolute;
+            top: calc(50% -2px);
+            left: 50%;
+            width: 50%;
+            height: 4px;
+            background: transparent;
+            transform-origin: left;
+            animation: animate 2s linear infinite;
+        }
+        
+        span:before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff000;
+            top: -6px;
+            right: -8px;
+            box-shadow: 0 0 20px#fff000;
+        }
+        
+        @keyframes animateC {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes animate {
+            0% {
+                transform: rotate(45deg);
+            }
+            100% {
+                transform: rotate(405deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class=" navbar ">
+            <a href="index.html">HOME
+                </a>
+            <a href="about.html">ABOUT
+                </a>
+            <a href="project.html">PROJECT
+                </a>
+            <a href="contact.html">CONTACT
+                </a>
+        </div>
+    </header>
+    <p>MBASA MAGWEGWE
+        <br>I 'm the Junior Frontend Developer</p>
+    <div class="ring">Loading
+        <span>
+            </span>
+    </div>
+</body>
+
+</html>
